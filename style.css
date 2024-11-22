@@ -1,3 +1,33 @@
-body{
 
+
+.jojobarre{
+    display: flex;
+    background-color: beige ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial";
+    font-size: 20px;
+}
+
+.pp{
+    background: url("pp.jpg");
+    background-size: 250%;
+    background-position-x: 55%;
+    box-shadow: 0 0 10px 5px #000;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    align-self: center;
+}
+
+#ppgauche{
+    text-align: right;
+    position: relative;
+    right: 20px;
+}
+
+#ppdroite{
+    position: relative;
+    left: 20px;
 }

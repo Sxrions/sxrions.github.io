@@ -1,3 +1,120 @@
-.maincontainer {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column; /* Set direction to column */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    font-family: 'Montserrat', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire page */
+}
+
+.content-container {
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add some padding inside the border */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the maximum width */
+    background: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+footer {
+    text-align: right;
+    font-size: small;
+}
+
+#maincontainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+
+#maincontainer p {
+    text-align: justify; 
+    width: 100%; 
+    line-height: 1.2; /* Adjust line height to reduce space between lines */
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; 
+    width: 100%; /* Ensure header takes full width */
+    margin-top: 20px; /* Add some space between the top of the page and the header */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0; /* Remove gap to ensure borders touch */
+    width: 100%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Add padding to grid items */
+    border: 1px solid black; /* Add border to all sides */
+}
+
+.grid-item:nth-child(1) {
+    border-top: none; /* Remove top border for top-left item */
+    border-left: none; /* Remove left border for top-left item */
+}
+
+.grid-item:nth-child(2) {
+    border-top: none; /* Remove top border for top-right item */
+    border-right: none; /* Remove right border for top-right item */
+}
+
+.grid-item:nth-child(3) {
+    border-bottom: none; /* Remove bottom border for bottom-left item */
+    border-left: none; /* Remove left border for bottom-left item */
+}
+
+.grid-item:nth-child(4) {
+    border-bottom: none; /* Remove bottom border for bottom-right item */
+    border-right: none; /* Remove right border for bottom-right item */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    margin: 0; /* Remove any margin */
+    padding: 10px 0; /* Add some padding to the top and bottom */
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the image round */
+    margin-right: 10px; /* Add some space between the image and the text */
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile-title {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 5px; /* Add some space between the name and the title */
 }

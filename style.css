@@ -2,24 +2,23 @@
 
 body {
     display: flex;
-    flex-direction: column; /* Set direction to column */
-    justify-content: flex-start; /* Align items to the top */
-    align-items: center; /* Center horizontally */
-    height: 100vh; /* Ensure the body takes the full height of the viewport */
-    margin: 0; /* Remove default margin */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
     font-family: 'Montserrat', sans-serif;
-    background: url('background.jpg') no-repeat center center fixed; /* Add background image */
-    background-size: cover; /* Ensure the background image covers the entire page */
-}
+    background: url('background.jpg') no-repeat center center fixed; 
+    background-size: cover; 
 
 .content-container {
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Add some padding inside the border */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    border-radius: 15px; 
+    padding: 20px; 
+    box-sizing: border-box; 
     width: 100%;
-    max-width: 1200px; /* Optional: limit the maximum width */
-    background: rgba(255, 255, 255, 0.4); /* More transparent white background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    max-width: 1200px; 
+    background: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(10px); 
 }
 
 footer {
@@ -38,15 +37,15 @@ footer {
 #maincontainer p {
     text-align: justify; 
     width: 100%; 
-    line-height: 1.2; /* Adjust line height to reduce space between lines */
+    line-height: 1.2; 
 }
 
 header {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
     align-items: center; 
-    width: 100%; /* Ensure header takes full width */
-    margin-top: 20px; /* Add some space between the top of the page and the header */
+    width: 100%; 
+    margin-top: 20px; 
 }
 
 h2 {
@@ -59,53 +58,53 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 0; /* Remove gap to ensure borders touch */
+    gap: 0; 
     width: 100%;
 }
 
 .grid-item {
     display: flex;
-    flex-direction: column; /* Ensure items are stacked vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px; /* Add padding to grid items */
-    border: 1px solid black; /* Add border to all sides */
+    padding: 10px; 
+    border: 1px solid black; 
 }
 
 .grid-item:nth-child(1) {
-    border-top: none; /* Remove top border for top-left item */
-    border-left: none; /* Remove left border for top-left item */
+    border-top: none; 
+    border-left: none; 
 }
 
 .grid-item:nth-child(2) {
-    border-top: none; /* Remove top border for top-right item */
-    border-right: none; /* Remove right border for top-right item */
+    border-top: none; 
+    border-right: none; 
 }
 
 .grid-item:nth-child(3) {
-    border-bottom: none; /* Remove bottom border for bottom-left item */
-    border-left: none; /* Remove left border for bottom-left item */
+    border-bottom: none; 
+    border-left: none;
 }
 
 .grid-item:nth-child(4) {
-    border-bottom: none; /* Remove bottom border for bottom-right item */
-    border-right: none; /* Remove right border for bottom-right item */
+    border-bottom: none;
+    border-right: none; 
 }
 
 .profile {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
-    margin: 0; /* Remove any margin */
-    padding: 10px 0; /* Add some padding to the top and bottom */
+    justify-content: center; 
+    margin: 0; 
+    padding: 10px 0;
 }
 
 .profile-image {
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Make the image round */
-    margin-right: 10px; /* Add some space between the image and the text */
+    border-radius: 50%; 
+    margin-right: 10px; 
 }
 
 .profile-name {
@@ -116,5 +115,5 @@ h2 {
 .profile-title {
     font-size: 1em;
     font-weight: normal;
-    margin-top: 5px; /* Add some space between the name and the title */
+    margin-top: 5px;
 }
